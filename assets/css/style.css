@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Kurale');
 
 .display-3 {
-  background: url('/assets/images/timeTrain.jpg') no-repeat center center;
+  background: url('https://i.pinimg.com/originals/48/81/0c/48810c42a282826a8669390d7020097b.jpg') no-repeat center center;
   background-size: cover;
   height: 300px;
   margin-top: 0;
@@ -89,11 +89,13 @@ body {
     background-color:pink;
     border: 1px dotted navy;
     font-family: 'Kurale', serif;
+    padding: 10px;
   }
   
   form input:hover {
     background: white;
     border: 1px dashed black;
+    cursor: pointer;
   }
   
   form input:focus {

@@ -49,7 +49,7 @@ $(document).ready(function() {
     // Clearing out the inputs
     $("#train-name-input").val("");
     $("#train-dest-input").val("");
-    $("#first-train-input").val("");
+    $("train-start-input").val("");
     $("#train-frequency-input").val("");
 
  //if input empty not accept submission   
