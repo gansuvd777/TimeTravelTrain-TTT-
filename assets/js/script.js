@@ -51,6 +51,8 @@ $(document).ready(function() {
     $("#train-dest-input").val("");
     $("#first-train-input").val("");
     $("#train-frequency-input").val("");
+
+ //if input empty not accept submission   
 //     $('.form').submit(function() 
 // {
 //     if ($.trim($("#train-name-input").val()) === "" || $.trim($("#train-dest-input").val()) === "" || $.trim($("#train-start-input").val()) === "" || $.trim($("#train-frequency-input").val()) === "") {
@@ -106,11 +108,6 @@ $(document).ready(function() {
     var minutes = (time.hour()*60) + time.minute();
     return minutes
   };
-  
-  // getMomentFromString = function(str){
-  //   var t = moment(str, 'HH:MM a');
-  //   return t;
-  // };
   
   });
   
