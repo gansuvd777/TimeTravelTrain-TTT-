@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Trains on Time</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="shortcut icon" href="https://static1.squarespace.com/static/59d3ebfd268b966d7ae3f572/t/59d662660abd04828f327099/1507222118904/tru_thumbnail.jpg?format=1000w">
+    <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h3 class="display-3"></h3>
+        <h3 class="header">Welcome to<strong> Time Travel Train </strong>Station</h3>
+        <hr class="my-4">
+        <h2><p> <strong> 🚦 T⚈T⚈T 🚦 </strong></p></h2>
+        <!-- <h3 class="header-text">Train's coming.</h3>
+        <h4 class="header-text">Keep it on time!</h4> -->
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+            <section class="train-schedule">
+                <h3 class=" ">Current Train Schedule<i class="small material-icons">directions_subway</i> <span id="current-time"></span></h3>
+        
+                <table id="train-table">
+                  <thead>
+                    <tr>
+                      <th>Train Name</th>
+                      <th>Destination</th>
+                      <th>Frequency (min)</th>
+                      <th>Next Arrival</th>
+                      <th>Minutes Away</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+              </section>
+        </div>
+        <div class="col-md-6">
+            <section class="train-add">
+                <h3>Add Time Travel Train<i class="small material-icons">directions_subway</i></h3>
+                <form class="form" id="add-train" action="index.html" method="post">
+                  <label for="name">Train Name</label>
+                  <input type="text" name="name" value="" id='train-name-input'>
+                  <label for="destination">Destination</label>
+                  <input type="text" name="destination" value="" id='train-dest-input'>
+                  <label for='first-train-time'>First Train Time (please enter "HH:mm" - military time)</label>
+                  <input type="text" name="" value="" id='train-start-input'>
+                  <label for="frequency">Frequency (min)</label>
+                  <input type="number" name="" value="" id="train-frequency-input">
+                  <input type="submit" name="Submit" value="Let Magic Happen 🛅 " id="add-train-input">
+                </form>
+              </section>
+        </div>
+      </div>
+      
+      
+      <br>
+      <br>
+
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+     &copy; created by Pearl Oyunbaatar 2018 <i class="tiny material-icons">face</i>
+    <a class="black-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+  </div>
+  <!-- <div class="footer">
+    <div class="mainfooter">&copy; created by Pearl Oyunbaatar 2018 <img src="" alt=""></div>
+  </div> -->
+     <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='crossorigin='anonymous'></script>
+  <!--Firebase link-->
+  <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+
+  </body>
+</html>
