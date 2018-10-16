@@ -19,109 +19,131 @@ body {
     position: relative;
   }
   
-  .header {
-    text-align: center;
-    font-family: 'Fredericka the Great', cursive;
-    /* line-height: 60px; */
-    color:navy;
-  }
-  h2 p{
-    text-align: center;
-    font-family: 'Fredericka the Great', cursive;
-    color: blue!important;
-  }
-  
-  /* Body CSS */
-  section {
-    border: 1px dotted navy;
-    font-family: 'Kurale', serif;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-radius: 15px;
-    background-color: #EFF2F4;
-  }
-  
-  section h3 {
-    font-family: 'Kurale', serif;
-    margin-top: 0px;
-    background: darkblue;
-    color: #f9f7f1;
-    font-size: 24px;
-    padding: 2px 7px;
-    border-radius: 10px;
-  }
-  
-  /* Table CSS */
-  
-  #current-time {
-    float: right;
-  }
-  
-  #trainTable {
-    width: 100%;
-    text-align: center;
-    border-collapse: collapse;
-  }
-  
-  th {
-    font-weight: bold;
-    color: blue;
-  }
-  
-  td, th {
-    border-bottom: black 1px solid;
-    padding: 6px;
-    line-height: 1.5;
-  }
-  
-  .t-dest {
-    font-weight: bold;
-    font-size: 16px;
-  }
-  
-  /* Input CSS */
-  
-  form input {
-    display: block;
-    width: auto;
-    margin: 10px auto;
-    color: blue;
-    background-color:pink;
-    border: 1px dotted navy;
-    font-family: 'Kurale', serif;
-    padding: 10px;
-  }
-  
-  form input:hover {
-    background: white;
-    border: 1px dashed black;
-    cursor: pointer;
-  }
-  
-  form input:focus {
-    background:pink;
-  }
-  
-  label {
-    width: 95%;
-    margin-left: 2.5%;
-    font-style: italic;
-    font-family: 'Berkshire Swash', cursive;
-    font-size: 20px;
-    color: red;
-  }
-  
-  #add-train-input {
-    width: auto;
-    margin: 0 auto;
-    background: rgb(18, 18, 158);
-    color: rgb(216, 213, 22);
-    font-style: italic;
-    font-size: 19px;
-    padding: 9px;
-    border-radius: 5px;
-    font-family: 'Berkshire Swash', cursive;
-  }
+.header {
+  text-align: center;
+  font-family: 'Fredericka the Great', cursive;
+  /* line-height: 60px; */
+  color:navy;
+}
+h2 p{
+  text-align: center;
+  font-family: 'Fredericka the Great', cursive;
+  color: blue!important;
+}
+section {
+  border: 1px dotted navy;
+  font-family: 'Kurale', serif;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  background-color: #EFF2F4;
+}
+.card {
+  border: 1px dotted navy!important;
+  font-family: 'Kurale', serif;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  background-color: #EFF2F4;
+}
+#train-table{
+  font-family: 'Kurale', serif;
+}
+.card-header {
+  background-color: navy!important;
+  color: #f9f7f1;
+  font-size: 24px;
+  padding: 2px 7px;
+  border-radius: 10px;
+}
+section h3 {
+  font-family: 'Kurale', serif;
+  margin-top: 0px;
+  background: darkblue;
+  color: #f9f7f1;
+  font-size: 24px;
+  padding: 2px 7px;
+  border-radius: 10px;
+}
+
+#current-time {
+  float: right;
+}
+
+#trainTable {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+th {
+  font-weight: bold;
+  color: blue;
+}
+
+td, th {
+  border-bottom: black 1px solid;
+  padding: 6px;
+  line-height: 1.5;
+}
+
+.t-dest {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+form input {
+  display: block;
+  width: auto;
+  margin: 10px auto;
+  color: blue;
+  background-color:pink;
+  border: 1px dotted navy;
+  font-family: 'Kurale', serif;
+  padding: 10px;
+}
+
+form input:hover {
+  background: white;
+  border: 1px dashed black;
+  cursor: pointer;
+}
+
+form input:focus {
+  background:pink;
+}
+
+label {
+  width: 95%;
+  margin-left: 2.5%;
+  font-style: italic;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 20px;
+  color: red;
+}
+
+#add-train-input {
+  width: auto;
+  margin: 0 auto;
+  background: rgb(18, 18, 158);
+  color: rgb(216, 213, 22);
+  font-style: italic;
+  font-size: 19px;
+  padding: 9px;
+  border-radius: 5px;
+  font-family: 'Berkshire Swash', cursive;
+}
+#checkPrice {
+  background-color: navy;
+  font-family: 'Kurale', serif;
+  border-radius: 4px;
+}
+.extraBtn {
+  font-family: 'Kurale', serif;
+  color:blue;
+  font-weight: bolder;
+
+}
 .footer-copyright {
   background-color: lightgray;
   color: black;
