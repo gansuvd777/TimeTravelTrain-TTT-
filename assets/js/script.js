@@ -100,7 +100,7 @@ $(document).ready(function() {
   
   
   
-    $("#train-table > tbody").append("<tr><td>" + trainName + "</td><td class='t-dest'>" + trainDest + "</td><td>" +
+    $("#trainTable > tbody").append("<tr><td>" + trainName + "</td><td class='t-dest'>" + trainDest + "</td><td>" +
     trainFrequency + "</td><td>" + moment(nextTrain).format("HH:mm") + "</td><td>" + tMinutesTilTrain + "</td></tr>");
   });
   

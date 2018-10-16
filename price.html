@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TTT</title>
+    <link rel="shortcut icon" href="https://static1.squarespace.com/static/59d3ebfd268b966d7ae3f572/t/59d662660abd04828f327099/1507222118904/tru_thumbnail.jpg?format=1000w">
+    <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+<body>
+<hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+
+        <div class="card mb-4">
+          <div class="card-header">Scheduled Time Travel Train Price</div>
+          <div class="card-body">
+            <table class="table table-sm table-hover" id='train-table'>
+              <thead>
+                <tr>
+                  <th scope="col">Train Name</th>
+                  <th scope="col">Destination</th>
+                  <th scope="col">Date and time</th>
+                  <th scope="col">Duration</th>
+                  <th scope="col">Hourly Rate ($)</th>
+                  <th scope="col">Total ($)</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <!-- Add train information  -->
+        <div class="card mb-4">
+          <div class="card-header">Add more magic and see the price </div>
+          <div class="card-body">
+
+            <!-- Entry Form -->
+            <form>
+              <div class="form-group">
+                <label for="magic-name-input">Magic Name</label>
+                <input class="form-control" id="magic-name-input" placeholder="Treasure Island" type="text">
+              </div>
+              <div class="form-group">
+                <label for="dest-input">Destination</label>
+                <input class="form-control" id="dest-input" placeholder="Somewhere in the world" type="text">
+              </div>
+              <div class="form-group">
+                <label for="date-input">Date and Time (MM/DD/YYYY HH:mm)</label>
+                <input class="form-control" id="date-input" placeholder="01/01/2000 12:00" type="text">
+              </div>
+              <div class="form-group">
+                <label for="rate-input">Hourly Rate</label>
+                <input class="form-control" id="rate-input" placeholder="$$$" type="text">
+              </div>
+              <button class="btn btn-primary float-right" id="checkPrice">Check out!</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <hr>
+  <a href="./index.html" target="_blank">Back to Home Page<a class="btn-floating btn-large pulse"><i class="material-icons">subway</i></a></a>
+  <br>
+  <br>
+
+  <div class="footer-copyright">
+    <div class="container">
+     &copy; created by Pearl Oyunbaatar 2018 <i class="tiny material-icons">face</i>
+    <a class="black-text text-lighten-4 right" href="#!">Links to my social media</a>
+    </div>
+  </div>
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='crossorigin='anonymous'></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+
+    <script src="./assets/js/price.js"></script>
+</body>
+</html>
