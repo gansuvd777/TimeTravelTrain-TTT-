@@ -62,11 +62,11 @@ var config = {
     console.log(magicDate);
     console.log(magicRate);
   
-    var magicDatePretty = moment.unix(magicDate).format("hh:mm");
+    var magicDatePretty = moment.unix(magicDate).format("MM/DD/YYYY   hh:mm");
     console.log(magicDatePretty);
   
     // Calculate the travel duration
-    var magicDuration = moment().diff(moment(magicDate, "X"), "minute");
+    var magicDuration = moment().diff(moment(magicDate, "m"), "minute");
     console.log(magicDuration);
     // var magicDuration = moment();
     // console.log("This is the durationtime: " + moment(magicDuration).format("minutes"));
