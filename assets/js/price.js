@@ -80,7 +80,7 @@ var config = {
       $("<td>").text(magicName),
       $("<td>").text(magicDest),
       $("<td>").text(magicDatePretty),
-      $("<td>").text(magicDuration),
+      $("<td>").text(magicDuration + 'min'),
       $("<td>").text('$' + magicRate),
       $("<td>").text('$' + magicTotal)
     );
