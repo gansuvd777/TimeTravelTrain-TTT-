@@ -17,7 +17,7 @@ var config = {
     // user input
     var magicName = $("#magic-name-input").val().trim();
     var magicDest = $("#dest-input").val().trim();
-    var magicDate = moment($("#date-input").val().trim(), "MM/DD/YYYY hh:mm").format("X");
+    var magicDate = moment($("#date-input").val().trim(), "hh:mm").format("minute");
     var magicRate = $("#rate-input").val().trim();
   
     // Creates local "temporary" object for holding magic train info
@@ -62,14 +62,14 @@ var config = {
     console.log(magicDate);
     console.log(magicRate);
   
-    var magicDatePretty = moment.unix(magicDate).format("MM/DD/YYYY hh:mm");
+    var magicDatePretty = moment.unix(magicDate).format("hh:mm");
     console.log(magicDatePretty);
   
     // Calculate the travel duration
-    // var magicDuration = moment().diff(moment(magicDate, "X"), "minutes");
-    // console.log(magicDuration);
-    var magicDuration = moment();
-    console.log("This is the durationtime: " + moment(magicDuration).format("minutes"));
+    var magicDuration = moment().diff(moment(magicDate, "X"), "minute");
+    console.log(magicDuration);
+    // var magicDuration = moment();
+    // console.log("This is the durationtime: " + moment(magicDuration).format("minutes"));
   
     // Calculate the total rate
     var magicTotal = magicDuration * magicRate;
